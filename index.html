@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/min-css.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,22 +18,22 @@
             <aside class="sidebar">
                     <div class="logo">mohammed</div>
                     <ul>
-                        <a href="index.html"><li class="active"><i class="fa-solid fa-chart-bar"></i><p>dashboard</p></li></a>
-                        <a href="settings.html"><li><i class="fa-solid fa-gear"></i><p>settings</p></li></a>
-                        <a href="profile.html"><li><i class="fa-solid fa-user"></i><p>profile</p></li></a>
-                        <a href="projects.html"><li><i class="fa-solid fa-diagram-project"></i><p>projects</p></li></a>
-                        <a href="courses.html"><li><i class="fa-solid fa-graduation-cap"></i><p>courses</p></li></a>
-                        <a href="friends.html"><li><i class="fa-solid fa-user-group"></i><p>friends</p></li></a>
-                        <a href="files.html"><li><i class="fa-solid fa-file"></i><p>files</p></li></a>
-                        <a href="plans.html"><li><i class="fa-brands fa-cc-visa"></i><p>plans</p></li></a>
+                        <a href="index.html"><li class="active rad-6 t"><i class="fa-solid fa-chart-bar"></i><p>dashboard</p></li></a>
+                        <a href="settings.html"><li class="rad-6 t"><i class="fa-solid fa-gear"></i><p>settings</p></li></a>
+                        <a href="profile.html"><li class="rad-6 t"><i class="fa-solid fa-user"></i><p>profile</p></li></a>
+                        <a href="projects.html"><li class="rad-6 t"><i class="fa-solid fa-diagram-project"></i><p>projects</p></li></a>
+                        <a href="courses.html"><li class="rad-6 t"><i class="fa-solid fa-graduation-cap"></i><p>courses</p></li></a>
+                        <a href="friends.html"><li class="rad-6 t"><i class="fa-solid fa-user-group"></i><p>friends</p></li></a>
+                        <a href="files.html"><li class="rad-6 t"><i class="fa-solid fa-file"></i><p>files</p></li></a>
+                        <a href="plans.html"><li class="rad-6 t"><i class="fa-brands fa-cc-visa"></i><p>plans</p></li></a>
                     </ul>
             </aside>
             <section class="main">
                 <header>
                     <form action="">
                         <div class="icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="search" name="search" placeholder="type a keyword">
+                            <i class="fa-solid fa-magnifying-glass ty-n50"></i>
+                            <input class="t" type="search" name="search" placeholder="type a keyword">
                         </div>
                     </form>
                     <div class="box">
@@ -42,8 +43,8 @@
                 </header>
                 <h1 class="main-title">dashboard</h1>
                 <div class="container">
-                    <div class="dashboard-top">
-                        <div class="card">
+                    <div class="dashboard-top d-grid a-fill-450 mobile-grid">
+                        <div class="card rad-6">
                             <div class="head">
                                 <div class="text">
                                     <h3>welcome</h3>
@@ -51,7 +52,7 @@
                                 </div>
                                 <img src="imgs/welcome.png" alt="Welcome">
                             </div>
-                            <div class="profile"><img src="imgs/avatar.png" alt="Avatar"></div>
+                            <div class="profile"><img class="half-rad" src="imgs/avatar.png" alt="Avatar"></div>
                             <div class="details">
                                 <div class="col">
                                     <p>mohammed fandees</p>
@@ -66,20 +67,20 @@
                                     <span>earned</span>
                                 </div>
                             </div>
-                            <div class="button"><a class="blue-button" href="#">profile</a></div>
+                            <div class="button"><a class="blue-button rad-6" href="#">profile</a></div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title">
                                 <h3>quick draft</h3>
                                 <span>write a draft for your ideas</span>
                             </div>
                             <form action="">
-                                <input type="text" name="title" placeholder="title">
-                                <textarea name="thought" cols="30" rows="8" placeholder="your thought"></textarea>
-                                <input class="blue-button" type="submit" value="Save">
+                                <input class="rad-6" type="text" name="title" placeholder="title">
+                                <textarea class="rad-6" name="thought" cols="30" rows="8" placeholder="your thought"></textarea>
+                                <input class="blue-button rad-6" type="submit" value="Save">
                             </form>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title">
                                 <h3>yearly targets</h3>
                                 <span>targets of the year</span>
@@ -109,72 +110,72 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title">
                                 <h3>tickets statistics</h3>
                                 <span>everything about support tickets</span>
                             </div>
                             <div class="holder">
-                                <div class="card">
+                                <div class="card rad-6">
                                     <i class="fa-regular fa-rectangle-list"></i>
                                     <p>2500</p>
                                     <span>total</span>
                                 </div>
-                                <div class="card">
+                                <div class="card rad-6">
                                     <i class="fa-solid fa-spinner"></i>
                                     <p>500</p>
                                     <span>pending</span>
                                 </div>
-                                <div class="card">
+                                <div class="card rad-6">
                                     <i class="fa-regular fa-circle-check"></i>
                                     <p>1900</p>
                                     <span>closed</span>
                                 </div>
-                                <div class="card">
+                                <div class="card rad-6">
                                     <i class="fa-regular fa-rectangle-xmark"></i>
                                     <p>100</p>
                                     <span>deleted</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title">
                                 <h3>latest news</h3>
                             </div>
                             <div class="news">
-                                <div class="image"><img src="imgs/news-01.png" alt=""></div>
+                                <div class="image"><img class="rad-6" src="imgs/news-01.png" alt=""></div>
                                 <div class="text">
                                     <p>created SASS section</p>
                                     <span>new SASS examples & tutorials</span>
                                 </div>
-                                <div class="count-container"><span class="count">3 days ago</span></div>
+                                <div class="count-container"><span class="count rad-6">3 days ago</span></div>
                             </div>
                             <div class="news">
-                                <div class="image"><img src="imgs/news-02.png" alt=""></div>
+                                <div class="image"><img class="rad-6" src="imgs/news-02.png" alt=""></div>
                                 <div class="text">
                                     <p>changed the design</p>
                                     <span>a brand new website design</span>
                                 </div>
-                                <div class="count-container"><span class="count">5 days ago</span></div>
+                                <div class="count-container"><span class="count rad-6">5 days ago</span></div>
                             </div>
                             <div class="news">
-                                <div class="image"><img src="imgs/news-03.png" alt=""></div>
+                                <div class="image"><img class="rad-6" src="imgs/news-03.png" alt=""></div>
                                 <div class="text">
                                     <p>team increased</p>
                                     <span>3 developers joined the team</span>
                                 </div>
-                                <div class="count-container"><span class="count">7 days ago</span></div>
+                                <div class="count-container"><span class="count rad-6">7 days ago</span></div>
                             </div>
                             <div class="news">
-                                <div class="image"><img src="imgs/news-04.png" alt=""></div>
+                                <div class="image"><img class="rad-6" src="imgs/news-04.png" alt=""></div>
                                 <div class="text">
                                     <p>added payment gateway</p>
                                     <span>many new payment gateways added</span>
                                 </div>
-                                <div class="count-container"><span class="count">9 days ago</span></div>
+                                <div class="count-container"><span class="count rad-6">9 days ago</span></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title">
                                 <h3>latest tasks</h3>
                             </div>
@@ -183,38 +184,38 @@
                                     <p>record one new video</p>
                                     <span>record python create exe project</span>
                                 </div>
-                                <div class="icon"><i class="fa-regular fa-trash-can"></i></div>
+                                <div class="icon"><i class="fa-regular fa-trash-can t"></i></div>
                             </div>
                             <div class="task">
                                 <div class="text">
                                     <p>write article</p>
                                     <span>write low level VS hight level languages</span>
                                 </div>
-                                <div class="icon"><i class="fa-regular fa-trash-can"></i></div>
+                                <div class="icon"><i class="fa-regular fa-trash-can t"></i></div>
                             </div>
                             <div class="task">
                                 <div class="text">
                                     <p>finish project</p>
                                     <span>publish academy programming project</span>
                                 </div>
-                                <div class="icon"><i class="fa-regular fa-trash-can"></i></div>
+                                <div class="icon"><i class="fa-regular fa-trash-can t"></i></div>
                             </div>
                             <div class="task">
                                 <div class="text">
                                     <p>attend the meeting</p>
                                     <span>attend the project business analysis meeting</span>
                                 </div>
-                                <div class="icon"><i class="fa-regular fa-trash-can"></i></div>
+                                <div class="icon"><i class="fa-regular fa-trash-can t"></i></div>
                             </div>
                             <div class="task">
                                 <div class="text">
                                     <p>finish lesson</p>
                                     <span>finish teaching flex box</span>
                                 </div>
-                                <div class="icon"><i class="fa-regular fa-trash-can"></i></div>
+                                <div class="icon"><i class="fa-regular fa-trash-can t"></i></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title">
                                 <h3>top search items</h3>
                             </div>
@@ -224,65 +225,65 @@
                             </div>
                             <div class="item">
                                 <p>programming</p>
-                                <span class="count">220</span>
+                                <span class="count rad-6">220</span>
                             </div>
                             <div class="item">
                                 <p>javaScript</p>
-                                <span class="count">180</span>
+                                <span class="count rad-6">180</span>
                             </div>
                             <div class="item">
                                 <p>PHP</p>
-                                <span class="count">160</span>
+                                <span class="count rad-6">160</span>
                             </div>
                             <div class="item">
                                 <p>code</p>
-                                <span class="count">145</span>
+                                <span class="count rad-6">145</span>
                             </div>
                             <div class="item">
                                 <p>design</p>
-                                <span class="count">110</span>
+                                <span class="count rad-6">110</span>
                             </div>
                             <div class="item">
                                 <p>logic</p>
-                                <span class="count">95</span>
+                                <span class="count rad-6">95</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title">
                                 <h3>latest uploads</h3>
                             </div>
                             <div class="file">
                                 <div class="image"><img src="imgs/pdf.svg" alt=""></div>
                                 <div class="text"><p>my-file.pdf</p><span>mohammed</span></div>
-                                <div class="count-container"><span class="count">2.9mb</span></div>
+                                <div class="count-container"><span class="count rad-6">2.9mb</span></div>
                             </div>
                             <div class="file">
                                 <div class="image"><img src="imgs/avi.svg" alt=""></div>
                                 <div class="text"><p>my-video-file.avi</p><span>admin</span></div>
-                                <div class="count-container"><span class="count">400.1mb</span></div>
+                                <div class="count-container"><span class="count rad-6">400.1mb</span></div>
                             </div>
                             <div class="file">
                                 <div class="image"><img src="imgs/psd.svg" alt=""></div>
                                 <div class="text"><p>my-PSD-file.psd</p><span>osama</span></div>
-                                <div class="count-container"><span class="count">25.3mb</span></div>
+                                <div class="count-container"><span class="count rad-6">25.3mb</span></div>
                             </div>
                             <div class="file">
                                 <div class="image"><img src="imgs/zip.svg" alt=""></div>
                                 <div class="text"><p>my-ZIP-file.zip</p><span>user</span></div>
-                                <div class="count-container"><span class="count">7.5mb</span></div>
+                                <div class="count-container"><span class="count rad-6">7.5mb</span></div>
                             </div>
                             <div class="file">
                                 <div class="image"><img src="imgs/dll.svg" alt=""></div>
                                 <div class="text"><p>my-DLL-file.dll</p><span>admin</span></div>
-                                <div class="count-container"><span class="count">1mb</span></div>
+                                <div class="count-container"><span class="count rad-6">1mb</span></div>
                             </div>
                             <div class="file">
                                 <div class="image"><img src="imgs/eps.svg" alt=""></div>
                                 <div class="text"><p>my-EPS-file.eps</p><span>designer</span></div>
-                                <div class="count-container"><span class="count">85mb</span></div>
+                                <div class="count-container"><span class="count rad-6">85mb</span></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title">
                                 <h3>last project progress</h3>
                             </div>
@@ -295,7 +296,7 @@
                             </ul>
                             <img src="imgs/project.png" alt="">
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title"><h3>reminders</h3></div>
                             <div class="reminder">
                                 <span></span>
@@ -319,14 +320,14 @@
                                 </div>
                             </div>
                             <div class="reminder">
-                                <span></span>
+                                <span class="half-rad"></span>
                                 <div class="text">
                                     <p>finish the development wrokshop</p>
                                     <span>3/12/2022 - 5:24PM</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title"><h3>latest post</h3></div>
                             <div class="details">
                                 <div class="image"><img src="imgs/avatar.png" alt="avatar"></div>
@@ -337,44 +338,44 @@
                                  but you can't fool all of the people all of the time.</p>
                             </div>
                             <div class="reach">
-                                <div class="likes"><i class="fa-regular fa-heart"></i><span>862.7K</span></div>
-                                <div class="comments"><i class="fa-regular fa-comments"></i><span>27.3K</span></div>
+                                <div class="likes"><i class="fa-regular fa-heart t"></i><span>862.7K</span></div>
+                                <div class="comments"><i class="fa-regular fa-comments t"></i><span>27.3K</span></div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title"><h3>social media stats</h3></div>
                             <div class="stage twitter">
-                                <i class="fa-brands fa-twitter"></i>    
+                                <i class="fa-brands fa-twitter t"></i>    
                                 <div class="text">
                                     <p>90K followers</p>
-                                    <a class="blue-button" href="#">follow</a>
+                                    <a class="blue-button rad-6" href="#">follow</a>
                                 </div>
                             </div>
                             <div class="stage facebook">
-                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-facebook-f t"></i>
                                 <div class="text">
                                     <p>4M likes</p>
-                                    <a class="blue-button" href="#">like</a>
+                                    <a class="blue-button rad-6" href="#">like</a>
                                 </div>
                             </div>
                             <div class="stage youtube">
-                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-youtube t"></i>
                                 <div class="text">
                                     <p>9M subscribers</p>
-                                    <a class="blue-button" href="#">subscribe</a>
+                                    <a class="blue-button rad-6" href="#">subscribe</a>
                                 </div>
                             </div>
                             <div class="stage linkedin">
-                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="fa-brands fa-linkedin t"></i>
                                 <div class="text">
                                     <p>270K followers</p>
-                                    <a class="blue-button" href="#">follow</a>
+                                    <a class="blue-button rad-6" href="#">follow</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="dashborad-bottom">
-                        <div class="card">
+                        <div class="card rad-6">
                             <div class="title"><h3>projects</h3></div>
                             <div class="table-box">
                                 <table>
@@ -387,70 +388,76 @@
                                         <th>status</th>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="t">
                                             <td>mynistry wikipedia</td>
                                             <td>10 may 2022</td>
                                             <td>ministry</td>
                                             <td>$5300</td>
-                                            <td><img src="imgs/team-01.png" alt="">
-                                                <img src="imgs/team-02.png" alt="">
-                                                <img src="imgs/team-03.png" alt="">
-                                                <img src="imgs/team-04.png" alt="">
+                                            <td>
+                                                <img class="half-rad" src="imgs/team-01.png" alt="">
+                                                <img class="half-rad" src="imgs/team-02.png" alt="">
+                                                <img class="half-rad" src="imgs/team-03.png" alt="">
+                                                <img class="half-rad" src="imgs/team-04.png" alt="">
                                             </td>
-                                            <td><p class="blue-button pending">pending</p></td>
+                                            <td><p class="blue-button rad-6 pending">pending</p></td>
                                         </tr>
-                                        <tr>
+                                        <tr class="t">
                                             <td>elzero shop</td>
                                             <td>12 oct 2021</td>
                                             <td>elzero company</td>
                                             <td>$1500</td>
-                                            <td><img src="imgs/team-01.png" alt="">
-                                                <img src="imgs/team-02.png" alt="">
-                                                <img src="imgs/team-03.png" alt="">
+                                            <td>
+                                                <img class="half-rad" src="imgs/team-01.png" alt="">
+                                                <img class="half-rad" src="imgs/team-02.png" alt="">
+                                                <img class="half-rad" src="imgs/team-03.png" alt="">
                                             </td>
-                                            <td><p class="blue-button in-progress">in progress</p></td>
+                                            <td><p class="blue-button rad-6 in-progress">in progress</p></td>
                                         </tr>
-                                        <tr>
+                                        <tr class="t">
                                             <td>bouba app</td>
                                             <td>05 sep 2021</td>
                                             <td>bouba</td>
                                             <td>$800</td>
-                                            <td><img src="imgs/team-01.png" alt="">
-                                                <img src="imgs/team-02.png" alt="">
+                                            <td>
+                                                <img class="half-rad" src="imgs/team-01.png" alt="">
+                                                <img class="half-rad" src="imgs/team-02.png" alt="">
                                             </td>
-                                            <td><p class="blue-button completed">completed</p></td>
+                                            <td><p class="blue-button rad-6 completed">completed</p></td>
                                         </tr>
-                                        <tr>
+                                        <tr class="t">
                                             <td>mahmoud website</td>
                                             <td>22 may 2021</td>
                                             <td>mahmoud</td>
                                             <td>$600</td>
-                                            <td><img src="imgs/team-01.png" alt="">
-                                                <img src="imgs/team-02.png" alt="">
+                                            <td>
+                                                <img class="half-rad" src="imgs/team-01.png" alt="">
+                                                <img class="half-rad" src="imgs/team-02.png" alt="">
                                             </td>
-                                            <td><p class="blue-button completed">completed</p></td>
+                                            <td><p class="blue-button rad-6 completed">completed</p></td>
                                         </tr>
-                                        <tr>
+                                        <tr class="t">
                                             <td>sayed website</td>
                                             <td>24 may 2021</td>
                                             <td>sayed</td>
                                             <td>$300</td>
-                                            <td><img src="imgs/team-01.png" alt="">
-                                                <img src="imgs/team-02.png" alt="">
+                                            <td>
+                                                <img class="half-rad" src="imgs/team-01.png" alt="">
+                                                <img class="half-rad" src="imgs/team-02.png" alt="">
                                             </td>
-                                            <td><p class="blue-button rejected">rejected</p></td>
+                                            <td><p class="blue-button rad-6 rejected">rejected</p></td>
                                         </tr>
-                                        <tr>
+                                        <tr class="t">
                                             <td>arena application</td>
                                             <td>01 mar 2021</td>
                                             <td>arena company</td>
                                             <td>$2600</td>
-                                            <td><img src="imgs/team-01.png" alt="">
-                                                <img src="imgs/team-02.png" alt="">
-                                                <img src="imgs/team-03.png" alt="">
-                                                <img src="imgs/team-04.png" alt="">
+                                            <td>
+                                                <img class="half-rad" src="imgs/team-01.png" alt="">
+                                                <img class="half-rad" src="imgs/team-02.png" alt="">
+                                                <img class="half-rad" src="imgs/team-03.png" alt="">
+                                                <img class="half-rad" src="imgs/team-04.png" alt="">
                                             </td>
-                                            <td><p class="blue-button completed">completed</p></td>
+                                            <td><p class="blue-button rad-6 completed">completed</p></td>
                                         </tr>
                                     </tbody>
                                 </table>

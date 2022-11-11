@@ -16,6 +16,7 @@
     --main-padding-top-bottom: 100px 0;
     --main-box-shadow: 0 2px 15px rgb(0 0 0 /10%);
     --hover-box-shadow: 0 2px 15px rgb(0 0 0 /20%);
+    --text-color: #888;
 }
 
 ::-webkit-scrollbar {
@@ -105,7 +106,7 @@ ul {
 
 .title span {
     font-size: 15px;
-    color: #888;
+    color: var(--text-color);
     display: block;
 }
 
@@ -122,11 +123,6 @@ ul {
     width: fit-content !important;
     cursor: pointer !important;
     font-size: 14px !important;
-    border-radius: 6px !important;
-    -webkit-border-radius: 6px !important;
-    -moz-border-radius: 6px !important;
-    -ms-border-radius: 6px !important;
-    -o-border-radius: 6px !important;
 }
 
 .count-container {
@@ -140,11 +136,6 @@ ul {
     padding: 4px 10px;
     background: #eee;
     color: #000 !important;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     font-size: 13px !important;
 }
 
@@ -227,17 +218,7 @@ ul {
     padding: 10px;
     display: flex;
     width: 170px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
     margin-bottom: 5px;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
 }
 
 .sidebar p {
@@ -324,11 +305,6 @@ header input {
     padding: 10px 10px 10px 30px;
     border-radius: 10px;
     width: 80%;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
 }
 
 .icon {
@@ -341,11 +317,6 @@ header .icon > i {
     position: absolute;
     left: 10px;
     top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     color: #ccc;
 }
 
@@ -393,26 +364,9 @@ header img {
 /* End header */
 /* Start Dashboard */
 
-.dashboard-top {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    gap: 20px;
-}
-
-@media (max-width: 768px) {
-    .dashboard-top {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-}
-
 .card {
     background-color: #fff;
     padding: 20px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     position: relative;
     overflow: hidden;
     box-shadow: var(--main-box-shadow);
@@ -441,7 +395,7 @@ header img {
 
 .dashboard-top .card:first-of-type .head span {
     font-size: 16px;
-    color: #888;
+    color: var(--text-color);
     display: block;
     margin-bottom: 16px;
 }
@@ -468,7 +422,6 @@ header img {
     top: -32px;
     left: 32px;
     border: 5px solid #fff;
-    border-radius: 50%;
 }
 
 
@@ -508,7 +461,7 @@ header img {
 
 .dashboard-top .card:first-of-type .details span {
     font-size: 14px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .dashboard-top .card:first-of-type .button {
@@ -528,11 +481,6 @@ textarea {
     background-color: #eee;
     resize: none;
     margin: 0 0 20px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
 }
 
 .dashboard-top .card:nth-child(2) input[type="submit"] {
@@ -576,7 +524,7 @@ textarea {
 
 .dashboard-top .card:nth-child(3) .text span:first-of-type {
     font-size: 15px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .dashboard-top .card:nth-child(3) .text span:last-of-type {
@@ -679,11 +627,6 @@ textarea {
     align-items: center;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     box-shadow: none;
 }
 
@@ -725,7 +668,7 @@ textarea {
 
 .dashboard-top .card:nth-child(4) .card span {
     font-size: 14px;
-    color: #888;
+    color: var(--text-color);
     display: flex;
     flex: 1;
 }
@@ -753,11 +696,6 @@ textarea {
 
 .dashboard-top .card:nth-child(5)  img {
     width: 100px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     margin-right: 15px;
 }
 
@@ -781,7 +719,7 @@ textarea {
 
 .dashboard-top .card:nth-child(5) span {
     font-size: 14px;
-    color: #888;
+    color: var(--text-color);
 }
 
 /* Card Six */
@@ -806,11 +744,6 @@ textarea {
 
 .dashboard-top .card:nth-child(6) .task i {
     cursor: pointer;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
 }
 
 .dashboard-top .card:nth-child(6) .task i:hover {
@@ -832,7 +765,7 @@ textarea {
 }
 
 .dashboard-top .card:nth-child(6) .task:nth-child(5) span {
-    color: #888;
+    color: var(--text-color);
 }
 
 /* Card Seven */
@@ -849,7 +782,7 @@ textarea {
 }
 
 .dashboard-top .card:nth-child(7) .top p {
-    color: #888;
+    color: var(--text-color);
 }
 
 /* Card Eight */
@@ -877,7 +810,7 @@ textarea {
 
 .dashboard-top .card:nth-child(8) .file .text span {
     font-size: 15px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .dashboard-top .card:nth-child(8) img {
@@ -921,17 +854,21 @@ textarea {
     position: absolute;
     left: -11px;
     top: 50%;
-    transform: translate(0px, -50%);
     width: 20px;
     height: 20px;
     border: 2px solid #fff;
     outline: 2px solid var(--blue-color);
+    background-color: var(--blue-color);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: var(--blue-color);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .dashboard-top .card:nth-child(9) li:last-of-type:before {
@@ -992,18 +929,13 @@ textarea {
 
 .dashboard-top .card:nth-child(10) .reminder .text span {
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .dashboard-top .card.card:nth-child(10) .reminder > span {
     width: 15px;
     height: 15px;
     background-color: var(--blue-color);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     display: block;
     margin-right: 15px;
 }
@@ -1033,7 +965,7 @@ textarea {
 }
 
 .dashboard-top .card.card:nth-child(11) .details span {
-    color: #888;
+    color: var(--text-color);
 }
 
 .dashboard-top .post {
@@ -1049,16 +981,11 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #888;
+    color: var(--text-color);
 }
 
 .reach i {
     margin-right: 5px;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
 }
 
 .likes, .comments {
@@ -1100,11 +1027,6 @@ textarea {
     position: absolute;
     top: 0;
     left: 0;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
 }
 
 .dashboard-top .card:nth-child(12) .text {
@@ -1200,11 +1122,6 @@ td {
 .dashborad-bottom img {
     width: 30px;
     border: 2px solid #fff;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .dashborad-bottom img:not(:first-of-type) {
@@ -1227,32 +1144,12 @@ td {
     background-color: var(--red-color) !important;
 }
 
-tr {
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
-}
-
 tr:hover {
     background-color: #faf7f7;
 }
 
 /* End Dashboard */
 /* Start Plan */
-
-.plan-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    gap: 20px;
-}
-
-@media (max-width: 768px) {
-    .plan-box {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-}
 
 .plan-box .price {
     display: flex;
@@ -1310,7 +1207,7 @@ tr:hover {
 }
 
 .plan-box li i {
-    color: #888;
+    color: var(--text-color);
 }
 
 .plan-box li p i {
@@ -1337,24 +1234,12 @@ tr:hover {
 
 .plan-box .card p:last-child {
     text-align: center;
-    color: #888;
+    color: var(--text-color);
     margin: 0;
 }
 
 /* End Plan */
 /* Start Project */
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, calc(50% - 20px));
-    gap: 20px;
-}
-
-@media (max-width: 1199px) {
-    .projects {
-        grid-template-columns: repeat(auto-fill, 100%);
-    }
-}
 
 .projects .text {
     display: flex;
@@ -1369,7 +1254,7 @@ tr:hover {
     display: block;
     margin: 10px 0;
     font-size: 14px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .projects .date {
@@ -1377,7 +1262,7 @@ tr:hover {
     top: 20px;
     right: 20px;
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .projects .images {
@@ -1387,11 +1272,6 @@ tr:hover {
 .projects img {
     width: 40px;
     border: 2px solid #fff;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .projects img:not(:first-of-type) {
@@ -1419,11 +1299,6 @@ tr:hover {
     font-size: 13px;
     background-color: #eee;
     padding: 3px 8px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     width: fit-content;
 }
 
@@ -1446,7 +1321,7 @@ tr:hover {
 
 .projects .range span {
     font-size: 14px;
-    color: #888;
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -1454,14 +1329,18 @@ tr:hover {
     width: 260px;
     height: 8px;
     background: #eee;
-    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    .projects .range .out {
+        width: 80%;
+    }
 }
 
 .projects .range .in {
     width: 50%;
     height: 100%;
     background: var(--red-color);
-    border-radius: 50px;
 }
 
 .projects .card:nth-child(2) .range .in {
@@ -1507,22 +1386,22 @@ tr:hover {
 /* End Project */
 /* Start Files */
 
-.flex-file {
-    display: flex;
+.files {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "down up";
     gap: 20px;
 }
 
 @media (max-width: 991px) {
-    .flex-file {
-        flex-direction: column-reverse;    
+    .files {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
 .download {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    flex-basis: 100%;
+    grid-area: down;
 }
 
 .download .card {
@@ -1533,12 +1412,7 @@ tr:hover {
     position: absolute;
     top: 10px;
     left: 10px;
-    color: #888;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -1561,7 +1435,7 @@ tr:hover {
 
 .owner {
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .download .f-info {
@@ -1575,7 +1449,7 @@ tr:hover {
 .download .f-info p {
     margin: 0;
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .container .download img {
@@ -1586,8 +1460,7 @@ tr:hover {
     height: fit-content;
     width: 100%;
     min-width: 260px;
-    flex: 1;
-    align-items: center;
+    grid-area: up;
 }
 
 .upload .bar {
@@ -1596,7 +1469,6 @@ tr:hover {
     align-items: center;
     padding: 10px;
     border: 1px solid #eee;
-    border-radius: 6px;
 }
 
 .upload .bar:not(:last-of-type) {
@@ -1634,7 +1506,7 @@ tr:hover {
     justify-content: space-between;
     flex: 1;
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
     margin-left: 10px;    
 }
 
@@ -1644,7 +1516,7 @@ tr:hover {
 }
 
 .upload .size {
-    color: #888;
+    color: var(--text-color);
 }
 
 .upload span {
@@ -1659,18 +1531,11 @@ tr:hover {
     font-size: 13px;
     color: #fff;
     background: var(--blue-color);
-    border-radius: 6px;
     font-weight: bold;
 }
 
 /* End Files */
 /* Start Friends */
-
-.friends {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
 
 .icons {
     position: absolute;
@@ -1682,18 +1547,8 @@ tr:hover {
 
 .icons i {
     padding: 10px;
-    border-radius: 50%;
     background: #ccc;
     color: #666;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
     cursor: pointer;
     font-size: 13px;
 }
@@ -1711,11 +1566,6 @@ tr:hover {
 
 .prof img {
     width: 100px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     margin: 10px 0;
 }
 
@@ -1727,7 +1577,7 @@ tr:hover {
 .prof span {
     display: block;
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
     margin: 5px 0 13px;
 }
 
@@ -1772,14 +1622,13 @@ tr:hover {
 
 .friends .details span {
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .friends .details a {
     font-size: 13px;
     font-weight: bold;
     padding: 4px 10px;
-    border-radius: 6px;
     background: var(--blue-color);
     color: #fff;
 }
@@ -1790,12 +1639,6 @@ tr:hover {
 
 /* End Friends */
 /* Start Courses */
-
-.courses {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
 
 .courses .card {
     padding: 0;
@@ -1822,7 +1665,7 @@ tr:hover {
 
 .courses .text p {
     font-size: 14px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .courses .details {
@@ -1837,24 +1680,11 @@ tr:hover {
 .courses .details p {
     margin: 0;
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
 }
 
 /* End Courses */
 /* Start Settings */
-
-.settings {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, calc(50% - 20px));
-    gap: 20px;
-}
-
-@media (max-width: 1199px) {
-    .settings {
-        grid-template-columns: repeat(auto-fill, 100%);
-    }
-}
-
 /* Card One */
 
 .settings .card:first-of-type .switch {
@@ -1872,7 +1702,7 @@ tr:hover {
     margin: 5px 0 13px;
     display: block;
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .settings .card:first-of-type label div {
@@ -1882,11 +1712,6 @@ tr:hover {
     cursor: pointer;
     position: relative;
     padding: 2px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
 }
 
 .settings .card:first-of-type input {
@@ -1917,11 +1742,6 @@ tr:hover {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    transition: position .3s;
-    -webkit-transition: position .3s;
-    -moz-transition: position .3s;
-    -ms-transition: position .3s;
-    -o-transition: position .3s;
 }
 
 .settings .card:first-of-type input:checked + div {
@@ -1939,11 +1759,6 @@ tr:hover {
     background-color: #fff;
     border: 1px solid #ccc;
     width: 100%;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     margin: 0;
     outline: none;
 }
@@ -1952,7 +1767,7 @@ tr:hover {
 
 .settings .card:nth-child(2) label {
     font-size: 14px;
-    color: #888;
+    color: var(--text-color);
     margin-bottom: 10px;
     display: block;
 }
@@ -1991,7 +1806,7 @@ tr:hover {
 
 .settings .pass span {
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
     display: block;
     margin: 5px 0 13px;
 }
@@ -1999,7 +1814,6 @@ tr:hover {
 .settings .pass a {
     padding: 4px 10px;
     color: #fff;
-    border-radius: 6px;
     background: var(--blue-color);
 }
 
@@ -2011,7 +1825,7 @@ tr:hover {
 
 .settings .card:nth-child(3)  span {
     font-size: 13px;
-    color: #888;
+    color: var(--text-color);
     display: block;
     margin: 4px 0 15px
 }
@@ -2024,11 +1838,6 @@ tr:hover {
     cursor: pointer;
     position: relative;
     padding: 2px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
 }
 
 .settings .card:nth-child(3) input {
@@ -2081,11 +1890,6 @@ tr:hover {
     background-color: #fff;
     border: 1px solid #ccc;
     width: 100%;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     margin: 0;
     outline: none;
 }
@@ -2099,18 +1903,12 @@ tr:hover {
 .settings .dev a {
     padding: 4px 10px;
     background-color: #eee;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     color: #000; 
 }
 
 .settings .stage {
     display: flex;
     border: 1px solid #ccc;
-    border-radius: 6px;
     margin-bottom: 15px;
     height: 40px;
     background-color: #f6f6f6;
@@ -2130,16 +1928,11 @@ tr:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #888;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
+    color: var(--text-color);
 }
 
-.settings .stage input[type="text"]:focus > i {
-    color: #000;
+.settings form .stage input:focus i {
+    color: #000 !important;
 }
 
 .settings .card:nth-child(5) input {
@@ -2246,7 +2039,6 @@ tr:hover {
     gap: 5px;
 }
 
-
 .settings .card:nth-child(6) form:first-of-type label {
     position: relative;
     padding-left: 30px;
@@ -2282,25 +2074,26 @@ tr:hover {
     content: '';
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    left: 4.5px;
-    width: 0;
-    height: 0;
+    left: 15px;
+    transform: translate(-16px ,-50%);
+    -webkit-transform: translate(-12px ,-50%);
+    -moz-transform: translate(-12px ,-50%);
+    -ms-transform: translate(-12px ,-50%);
+    -o-transform: translate(-12px ,-50%);
+    width: 12px;
+    height: 12px;
     background-color: var(--blue-color);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    transition: var(--main-transition);
-    -webkit-transition: var(--main-transition);
-    -moz-transition: var(--main-transition);
-    -ms-transition: var(--main-transition);
-    -o-transition: var(--main-transition);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    opacity: 0;
 }
 
 .settings .card:nth-child(6) form:first-of-type input[type="radio"]:checked + label::before {
@@ -2308,8 +2101,7 @@ tr:hover {
 }
 
 .settings .card:nth-child(6) form:first-of-type input[type="radio"]:checked + label::after {
-    width: 10px;
-    height: 10px;
+    opacity: 1;
 } 
 
 .settings .card:nth-child(6) form input[type="radio"] {
@@ -2324,11 +2116,6 @@ tr:hover {
     width: calc(100% / 3);
     padding: 15px;
     border: 1px solid #eee;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
     cursor: pointer;
 }
 
@@ -2400,7 +2187,7 @@ tr:hover {
  .profile .image span {
     display: block;
     margin: 10px 0 16px;
-    color: #888;
+    color: var(--text-color);
  }
 
  .profile .image span:last-of-type {
@@ -2412,11 +2199,6 @@ tr:hover {
     width: 120px;
     height: 6px;
     background-color: #eee;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -2429,11 +2211,6 @@ tr:hover {
     width: 70%;
     height: 6px;
     background-color: var(--blue-color);
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
 }
 
 .stars {
@@ -2467,7 +2244,7 @@ tr:hover {
 
 .profile .informations .row > span {
     font-size: 15px;
-    color: #888;
+    color: var(--text-color);
     display: block;
     margin-bottom: 10px;
 }
@@ -2487,7 +2264,7 @@ tr:hover {
 
 .profile .informations .info span {
     font-size: 14px;
-    color: #888;
+    color: var(--text-color);
 }
 
 .profile .informations .info p {
@@ -2507,11 +2284,6 @@ tr:hover {
     cursor: pointer;
     position: relative;
     padding: 2px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
 }
 
 .profile input {
@@ -2558,7 +2330,6 @@ tr:hover {
     color: #ccc;
     content: "\f00d";
 }
-
 
 /* More Cards */
 
@@ -2617,7 +2388,6 @@ tr:hover {
     font-size: 14px;
     background: #eee;
     padding: 4px 10px;
-    border-radius: 6px;
     display: block;
     width: fit-content;
     margin-right: 5px;
@@ -2671,7 +2441,7 @@ tr:hover {
 }
 
 .profile .actv span {
-    color: #888;
+    color: var(--text-color);
 }
 
 /* End Profile */

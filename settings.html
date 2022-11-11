@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/min-css.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,22 +18,22 @@
             <aside class="sidebar">
                 <div class="logo">mohammed</div>
                 <ul>
-                    <a href="index.html"><li><i class="fa-solid fa-chart-bar"></i><p>dashboard</p></li></a>
-                    <a href="settings.html"><li class="active"><i class="fa-solid fa-gear"></i><p>settings</p></li></a>
-                    <a href="profile.html"><li><i class="fa-solid fa-user"></i><p>profile</p></li></a>
-                    <a href="projects.html"><li><i class="fa-solid fa-diagram-project"></i><p>projects</p></li></a>
-                    <a href="courses.html"><li><i class="fa-solid fa-graduation-cap"></i><p>courses</p></li></a>
-                    <a href="friends.html"><li><i class="fa-solid fa-user-group"></i><p>friends</p></li></a>
-                    <a href="files.html"><li><i class="fa-solid fa-file"></i><p>files</p></li></a>
-                    <a href="plans.html"><li><i class="fa-brands fa-cc-visa"></i><p>plans</p></li></a>
+                    <a href="index.html"><li class="rad-6 t"><i class="fa-solid fa-chart-bar"></i><p>dashboard</p></li></a>
+                    <a href="settings.html"><li class="active rad-6 t"><i class="fa-solid fa-gear"></i><p>settings</p></li></a>
+                    <a href="profile.html"><li class="rad-6 t"><i class="fa-solid fa-user"></i><p>profile</p></li></a>
+                    <a href="projects.html"><li class="rad-6 t"><i class="fa-solid fa-diagram-project"></i><p>projects</p></li></a>
+                    <a href="courses.html"><li class="rad-6 t"><i class="fa-solid fa-graduation-cap"></i><p>courses</p></li></a>
+                    <a href="friends.html"><li class="rad-6 t"><i class="fa-solid fa-user-group"></i><p>friends</p></li></a>
+                    <a href="files.html"><li class="rad-6 t"><i class="fa-solid fa-file"></i><p>files</p></li></a>
+                    <a href="plans.html"><li class="rad-6 t"><i class="fa-brands fa-cc-visa"></i><p>plans</p></li></a>
                 </ul>
         </aside>
             <section class="main">
                 <header>
                     <form action="">
                         <div class="icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="search" name="search" placeholder="type a keyword">
+                            <i class="fa-solid fa-magnifying-glass ty-n50"></i>
+                            <input class="t" type="search" name="search" placeholder="type a keyword">
                         </div>
                     </form>
                     <div class="box">
@@ -41,8 +42,8 @@
                     </div>
                 </header>
                 <h1 class="main-title">settings</h1>
-                <div class="container settings">
-                    <div class="card">
+                <div class="container settings d-grid a-fill-two-col tab-gird">
+                    <div class="card rad-6">
                         <div class="title">
                             <h3>site control</h3>
                             <span>control the website if there is maintenance</span>
@@ -55,13 +56,13 @@
                             <form action="">
                                 <label for="top-switch">
                                     <input type="checkbox" name="switch" id="top-switch">
-                                    <div></div>
+                                    <div class="q-rad"></div>
                                 </label>
                             </form>
                         </div>
-                        <form action=""><textarea name="messate" cols="30" rows="10" placeholder="close message content"></textarea></form>
+                        <form action=""><textarea class="rad-6" name="messate" cols="30" rows="10" placeholder="close message content"></textarea></form>
                     </div>
-                    <div class="card">
+                    <div class="card rad-6">
                         <div class="title">
                             <h3>general info</h3>
                             <span>general information about your account</span>
@@ -69,22 +70,22 @@
                         <form action="">
                             <div>
                                 <label for="f-name">first name</label>
-                                <input type="text" name="f-name" id="f-name" placeholder="first name">
+                                <input class="rad-6" type="text" name="f-name" id="f-name" placeholder="first name">
                             </div>
                             <div>
                                 <label for="l-name">last name</label>
-                                <input type="text" name="l-name" id="l-name" placeholder="last name">
+                                <input class="rad-6" type="text" name="l-name" id="l-name" placeholder="last name">
                             </div>
                             <div>
                                 <label for="email">email</label>
                                 <div class="mail">
-                                    <input type="email" name="email" id="email" value="o@nn.sa" disabled>
+                                    <input class="rad-6" type="email" name="email" id="email" value="o@nn.sa" disabled>
                                     <a href="#">change</a>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="card">
+                    <div class="card rad-6">
                         <div class="title">
                             <h3>security info</h3>
                             <span>security information about your account</span>
@@ -94,7 +95,7 @@
                                 <p>password</p>
                                 <span>last change on 25/10/2021</span>
                             </div>
-                            <a href="#">change</a>
+                            <a class="rad-6" href="#">change</a>
                         </div>
                         <div class="auth">
                             <div class="text">
@@ -104,7 +105,7 @@
                             <form action=""><input type="checkbox" name="switch">
                                 <label for="ii">
                                     <input type="checkbox" id="ii">
-                                    <div class="switch-blue"></div>
+                                    <div class="q-rad"></div>
                                 </label>
                             </form>
                         </div>
@@ -113,34 +114,34 @@
                                 <p>devices</p>
                                 <span>check the login devices list</span>
                             </div>
-                            <a href="#">devices</a>
+                            <a class="rad-6" href="#">devices</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card rad-6">
                         <div class="title">
                             <h3>social info</h3>
                             <span>social media information</span>
                         </div>
                         <form action="">
-                            <div class="stage">
-                                <i class="fa-brands fa-twitter focus"></i>
+                            <div class="stage rad-6">
+                                <i class="fa-brands fa-twitter focus t"></i>
                                 <input type="text" name="link" placeholder="twitter username">
                             </div>
-                            <div class="stage">
-                                <i class="fa-brands fa-facebook-f focus"></i>
+                            <div class="stage rad-6">
+                                <i class="fa-brands fa-facebook-f focus t"></i>
                                 <input type="text" name="link" placeholder="facebook username">
                             </div>
-                            <div class="stage">
-                                <i class="fa-brands fa-linkedin focus"></i>
+                            <div class="stage rad-6">
+                                <i class="fa-brands fa-linkedin focus t"></i>
                                 <input type="text" name="link" placeholder="linkedin username">
                             </div>
-                            <div class="stage">
-                                <i class="fa-brands fa-youtube focus"></i>
+                            <div class="stage rad-6">
+                                <i class="fa-brands fa-youtube focus t"></i>
                                 <input type="text" name="link" placeholder="youtube username">
                             </div>
                         </form>
                     </div>
-                    <div class="card">
+                    <div class="card rad-6">
                         <div class="title">
                             <h3>widgets control</h3>
                             <span>show/Hide widgets</span>
@@ -172,7 +173,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="card">
+                    <div class="card rad-6">
                         <div class="title">
                             <h3>backup manager</h3>
                             <span>control backup time and location</span>
@@ -187,11 +188,11 @@
                         </form>
                         <form action="">
                             <input type="radio" name="choose" id="s-one">
-                            <label for="s-one"><i class="fa-solid fa-server"></i> <span>megaman</span></label>
+                            <label class="rad-6" for="s-one"><i class="fa-solid fa-server"></i> <span>megaman</span></label>
                             <input type="radio" name="choose" id="s-two">
-                            <label for="s-two"><i class="fa-solid fa-server"></i> <span>zero</span></label>
+                            <label class="rad-6" for="s-two"><i class="fa-solid fa-server"></i> <span>zero</span></label>
                             <input type="radio" name="choose" id="s-three">
-                            <label for="s-three"><i class="fa-solid fa-server"></i> <span>sigma</span></label>
+                            <label class="rad-6" for="s-three"><i class="fa-solid fa-server"></i> <span>sigma</span></label>
                         </form>
                     </div>
                 </div>

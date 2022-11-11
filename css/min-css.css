@@ -1,0 +1,74 @@
+/* Grid System */
+
+.d-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.a-fill-200 {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.a-fill-300 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.a-fill-450 {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.a-fill-two-col {
+    grid-template-columns: repeat(auto-fill, calc(50% - 20px));
+}
+
+@media (max-width: 768px) {
+    .mobile-grid {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}
+
+@media (max-width: 1199px) {
+    .tab-gird {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}
+
+.t {
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.rad-6 {
+    border-radius: 6px !important;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    -ms-border-radius: 6px !important;
+    -o-border-radius: 6px !important;
+}
+
+.half-rad {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.q-rad {
+    border-radius: 900px;
+    -webkit-border-radius: 900px;
+    -moz-border-radius: 900px;
+    -ms-border-radius: 900px;
+    -o-border-radius: 900px;
+}
+
+.ty-n50 {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
