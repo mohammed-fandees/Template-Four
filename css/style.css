@@ -1042,6 +1042,16 @@ textarea {
     font-weight: bold;
 }
 
+@media (max-width: 460px) {
+    .dashboard-top .card:nth-child(12) .text .blue-button {
+        display: none;
+    }
+
+    .dashboard-top .card:nth-child(12) p {
+        font-size: 14px;
+    }
+}
+
 .twitter {
     background-color: rgb(29 161 242 / 20%);
     color: #1da1f2;
@@ -2158,7 +2168,7 @@ tr:hover {
     }
 }
 
- .profile .image {
+.profile .image {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2167,36 +2177,36 @@ tr:hover {
     width: fit-content;
     height: fit-content;
     padding: 20px;
- }
+}
 
- @media (max-width: 1199px) {
+@media (max-width: 1199px) {
     .profile .image {
         width: 100%;
         border: none;
     }
- }
+}
 
- .profile .image img {
+.profile .image img {
     width: 100px;
     margin-bottom: 10px;
- }
+}
 
- .profile .image h3 {
+.profile .image h3 {
     margin: 0;
- }
+}
 
- .profile .image span {
+.profile .image span {
     display: block;
     margin: 10px 0 16px;
     color: var(--text-color);
- }
+}
 
- .profile .image span:last-of-type {
+.profile .image span:last-of-type {
     font-size: 13px;
     margin: 0;
- }
+}
 
- .profile .image .out {
+.profile .image .out {
     width: 120px;
     height: 6px;
     background-color: #eee;
@@ -2208,7 +2218,7 @@ tr:hover {
     }
 }
 
- .profile .image .range {
+.profile .image .range {
     width: 70%;
     height: 6px;
     background-color: var(--blue-color);
