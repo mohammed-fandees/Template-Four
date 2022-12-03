@@ -938,6 +938,7 @@ textarea {
     background-color: var(--blue-color);
     display: block;
     margin-right: 15px;
+
 }
 
 .dashboard-top .card.card:nth-child(10) .reminder:nth-child(3) > span {
