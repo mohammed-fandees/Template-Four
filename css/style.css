@@ -1919,6 +1919,7 @@ tr:hover {
 
 .settings .stage {
     display: flex;
+    flex-direction: row-reverse;
     border: 1px solid #ccc;
     margin-bottom: 15px;
     height: 40px;
@@ -1942,8 +1943,8 @@ tr:hover {
     color: var(--text-color);
 }
 
-.settings form .stage input:focus i {
-    color: #000 !important;
+.settings form .stage input:focus + i {
+    color: #000;
 }
 
 .settings .card:nth-child(5) input {
