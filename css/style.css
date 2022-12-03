@@ -685,6 +685,7 @@ textarea {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+        text-align: center;
     }   
 }
 
@@ -1276,6 +1277,14 @@ tr:hover {
     color: var(--text-color);
 }
 
+@media (max-width: 367px) {
+    .projects .date {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
 .projects .images {
     margin: 40px 0 0;
 }
@@ -1404,6 +1413,12 @@ tr:hover {
     gap: 20px;
 }
 
+@media (max-width: 367px) {
+    .files {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+    }
+}
+
 @media (max-width: 991px) {
     .files {
         display: flex;
@@ -1413,6 +1428,12 @@ tr:hover {
 
 .download {
     grid-area: down;
+}
+
+@media (max-width: 367px) {
+    .download {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+    }
 }
 
 .download .card {
@@ -1472,6 +1493,12 @@ tr:hover {
     width: 100%;
     min-width: 260px;
     grid-area: up;
+}
+
+@media (max-width: 367px) {
+    .upload {
+        min-width: 1px;
+    }
 }
 
 .upload .bar {
@@ -1548,12 +1575,30 @@ tr:hover {
 /* End Files */
 /* Start Friends */
 
+@media (max-width: 417px) {
+    .friends {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    }
+}
+
+@media (max-width: 367px) {
+    .friends {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+    }
+}
+
 .icons {
     position: absolute;
     top: 10px;
     left: 10px;
     display: flex;
     gap: 5px;
+}
+
+@media (max-width: 367px) {
+    .icons {
+        flex-direction: column;
+    }
 }
 
 .icons i {
@@ -1631,6 +1676,14 @@ tr:hover {
     justify-content: space-between;
 }
 
+@media (max-width: 417px) {
+    .friends .details {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
 .friends .details span {
     font-size: 13px;
     color: var(--text-color);
@@ -1650,6 +1703,18 @@ tr:hover {
 
 /* End Friends */
 /* Start Courses */
+
+@media (max-width: 417px) {
+    .courses {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+    }
+}
+
+@media (max-width: 367px) {
+    .courses {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+    }
+}
 
 .courses .card {
     padding: 0;
@@ -2156,6 +2221,12 @@ tr:hover {
     gap: 20px;
 }
 
+@media (max-width: 367px) {
+    .profile {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+    }
+}
+
 .profile .general {
     display: flex;
     flex-direction: row;
@@ -2194,6 +2265,7 @@ tr:hover {
 
 .profile .image h3 {
     margin: 0;
+    text-align: center;
 }
 
 .profile .image span {
