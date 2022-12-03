@@ -830,6 +830,12 @@ textarea {
     margin-left: 12px;
 }
 
+@media (max-width: 417px) {
+    .dashboard-top .card:nth-child(9) ul {
+        font-size: 14px;
+    }
+}
+
 .dashboard-top .card:nth-child(9) ul::before {
     content: '';
     position: absolute;
